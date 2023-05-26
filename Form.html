@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syle.css">
+    <title>HTML Form</title>
+</head>
+
+<!-- %40 mean @ and %20 space -->
+
+<body>
+    <h1>HTML FORM</h1>
+    <form action="./pages/thnakyou.html" method="get" novalidate>
+        <fieldset>
+        <legend style="font-size:50px;"> Form </legend>
+        <label for="Username">Username : </label>
+        <input type="text" id="Username" name="username" placeholder="please type username" required>
+
+        <br><br>
+
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" placeholder="please type password" required pattern=".{5,10}" title="please enter password length of 5 to 10">
+        
+        <br><br>
+
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" placeholder="please type email" required>
+
+<!-- this part for select gender -->
+
+        <p>select you gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="Male"><br>
+
+        <label for="male">Female</label>
+        <input type="radio" name="gender" id="Female" value="Female"><br>
+
+        <label for="male">other</label>
+        <input type="radio" name="gender" id="other" value="other"><br>
+        <br>
+
+<!-- this is part for dropdown list  -->
+
+<label for="age-group">Select you age</label>
+        <select name="age-group-value" id="age-group">
+            <option value="5-10">5-10</option>
+            <option value="11-20">11-20</option>
+            <option value="21-50">21-50</option>
+            <option value="50+">50+</option>
+        </select>
+<br><br>
+
+    <p>comment blow</p>
+    <textarea name="" id="" cols="20" rows="10" placeholder="type here"></textarea>
+    <br>
+
+<!-- for pic colour -->
+    <label for="colour">pic colour</label>
+    <input type="color" name="" id="">
+<br><br>
+
+<!-- for select date  -->  
+
+    
+    <label for="date">select you date</label>
+    <input type="date" name="" id="">
+<br><br>
+
+<!-- for upload file     -->
+
+<label for="file">choose you file</label>
+<input type="file" name="" id="">
+
+    <br>
+        <hr color="red">
+    <br>
+
+         
+
+        <input type="submit" value="Sign in">
+        
+
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.main{
+    background-color: darkgray;
+}
+.span{
+    background-color: aqua;
+}
+.second{
+    color: blue;
+}
+/* /* img{
+    border: 500px solid red; */
+} */
+
+input[type = "text"]{
+    color: brown;
+    background-color: aquamarine;
+}
+input[type = 'password']{
+    color: blue;
+    background-color: cornflowerblue;
+}

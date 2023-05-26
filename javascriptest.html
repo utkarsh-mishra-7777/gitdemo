@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>use JS scripting</title>
+</head>
+<body>
+    <h2>use the calss attribute in JavaScript</h2>
+    <p>click the botton to hide all elements with calss name</p>
+
+    <button onclick="myfunc()">hide elemnts</button>
+    <h2 class="city">Londan</h2>
+    <p>London is capital of england</p>
+
+    <h2 class="city">Delhi</h2>
+    <p>Delhi is capital of India</p>
+
+    <script>
+        function myfunc(){
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++){
+                x[i].style.display = "none";
+            }   
+
+        }
+        
+    </script>
+
+</body>
+</html>
